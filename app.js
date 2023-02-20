@@ -15,6 +15,7 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const viewRouter = require('./routes/viewRoutes');
+const compression = require('compression');
 
 // Start express app
 const app = express();
@@ -89,6 +90,7 @@ app.use(
   })
 );
 
+app.use(compression());
 // Test middleware
 app.use((req, res, next) => {
   req.requestTim = new Date().toISOString().split('T')[0];

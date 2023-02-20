@@ -2,7 +2,7 @@
 // cSpell:disable
 
 const locations = JSON.parse(document.getElementById('map').dataset.locations);
-console.log(locations);
+// console.log(locations);
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoiYWZhbmRpYXptaSIsImEiOiJjbGNia3Y3bHUwcTN1M3Bvd3QzMnRrcHkyIn0.nlLkLGFA1teUNhbbSYtMyg';
